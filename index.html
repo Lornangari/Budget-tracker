@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+    
+    <title>Budget Tracker</title>
+</head>
+<body>
+  
+       <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+        <div class="bg-white p-6 rounded-2xl shadow-md w-full max-w-md space-y-6">
+          <h1 class="text-2xl font-bold text-center text-green-800">Budget Tracker</h1>
+      
+          <!-- Add Transaction Form -->
+          <form id="transaction-form" class="space-y-4">
+            <input type="text" id="desc" placeholder="Add a description" required class="w-full p-2 border border-gray-300 rounded-lg" />
+            <input type="number" id="amount" placeholder="Amount" required class="w-full p-2 border border-gray-300 rounded-lg" />
+            <button type="submit" class="w-full bg-green-800 text-white py-2 rounded-lg hover:bg-green-600">Add Transaction</button>
+          </form>
+      
+          <!-- Filter Buttons -->
+          <div class="flex justify-between">
+            <button data-filter="all" class="filter-btn bg-gray-200 px-3 py-1 rounded">All</button>
+            <button data-filter="income" class="filter-btn bg-gray-200 px-3 py-1 rounded">Income</button>
+            <button data-filter="expense" class="filter-btn bg-gray-200s px-3 py-1 rounded">Expenses</button>
+          </div>
+      
+          <!-- Transactions List -->
+          <ul id="transaction-list" class="divide-y divide-gray-200"></ul>
+      
+          <!-- Totals -->
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p>Total Income: <span id="total-income" class="font-semibold text-green-600">0</span></p>
+            <p>Total Expenses: <span id="total-expenses" class="font-semibold text-green-600">0</span></p>
+            <p>Balance: <span id="total-balance" class="font-bold text-green-600">0</span></p>
+          </div>
+        </div>
+      
+        <script type="text/javascript" src="script.js"></script>
+      </body>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
